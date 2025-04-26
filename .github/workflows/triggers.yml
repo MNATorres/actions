@@ -6,11 +6,16 @@ on:
       - 'aprendiendo-github-actions'
   pull_request:
     types:
-      - [opened, closed]
+      - opened
+      - closed
     branches:
       - 'aprendiendo-github-actions'
   issues:
-    types: [opened, edited, closed]
+    types:
+      - opened
+      - edited
+      - closed
+
 jobs:
   hola-mundo:
     runs-on: ubuntu-latest

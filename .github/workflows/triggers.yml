@@ -20,6 +20,8 @@ jobs:
   hola-mundo:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Probando hola mundo
         run: python hola-mundo.py
       - name: probando test

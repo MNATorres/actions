@@ -1,6 +1,10 @@
-def printHeloWorld(name):
-    print(f"{name}, say Hello World!")
+import os
 
 
-name = "Matias Torres"
-printHeloWorld(name)
+def main():
+    nombre = os.getenv("USERNAME")
+    print(f"¡Hola, {nombre} desde GitHub!")
+
+
+if __name__ == "__main__":
+    main()
